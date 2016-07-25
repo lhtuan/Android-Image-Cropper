@@ -66,6 +66,8 @@ public class CropImageActivity extends AppCompatActivity implements CropImageVie
             actionBar.setTitle(title);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+
+        mCropImageView.setAspectRatio(mOptions.aspectRatioX, mOptions.aspectRatioY);
     }
 
     @Override
